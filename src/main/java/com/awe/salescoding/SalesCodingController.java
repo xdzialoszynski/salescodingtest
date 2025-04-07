@@ -20,10 +20,5 @@ public class SalesCodingController {
     private ResponseEntity<Output> getOutput(@RequestBody Input input) {
         return ResponseEntity.ok(taxeService.computeOutput(input));
     }
-
-    @GetMapping("/titi")
-    private ResponseEntity<String> getCoucou(){
-        return ResponseEntity.ok("coucou");
-    }
 }
 
